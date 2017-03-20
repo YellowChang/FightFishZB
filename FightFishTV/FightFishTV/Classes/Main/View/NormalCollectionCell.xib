@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NormalCollectionCell" customModule="FightFishTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="黄畅的swift学习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qf-ko-UUN">
+                        <rect key="frame" x="0.0" y="136" width="240" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Dkg-gI-eJ3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="4o7-Qp-gpQ">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="132"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QH-rH-ZpL">
+                        <rect key="frame" x="190" y="0.0" width="50" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="8Ba-cJ-aFD"/>
+                            <constraint firstAttribute="height" constant="20" id="Eix-qj-qIU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="7" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                        <state key="normal" title="6666" image="viewerIcon">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwO-5N-FuW">
+                        <rect key="frame" x="0.0" y="110" width="240" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="啦啦啦啦啦啦" image="Img_user"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4o7-Qp-gpQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Zy-tH-kPT"/>
+                <constraint firstAttribute="trailing" secondItem="4o7-Qp-gpQ" secondAttribute="trailing" id="5CG-JL-fx3"/>
+                <constraint firstItem="8Qf-ko-UUN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OKx-dU-gqs"/>
+                <constraint firstItem="8Qf-ko-UUN" firstAttribute="top" secondItem="4o7-Qp-gpQ" secondAttribute="bottom" constant="4" id="UX1-vh-zem"/>
+                <constraint firstAttribute="trailing" secondItem="8Qf-ko-UUN" secondAttribute="trailing" id="Wiu-nL-RhG"/>
+                <constraint firstItem="rwO-5N-FuW" firstAttribute="bottom" secondItem="4o7-Qp-gpQ" secondAttribute="bottom" id="ZS7-hN-zK6"/>
+                <constraint firstItem="rwO-5N-FuW" firstAttribute="leading" secondItem="4o7-Qp-gpQ" secondAttribute="leading" id="cI5-O8-jtc"/>
+                <constraint firstItem="0QH-rH-ZpL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cd6-A9-BQr"/>
+                <constraint firstAttribute="bottom" secondItem="8Qf-ko-UUN" secondAttribute="bottom" constant="4" id="ebY-2B-6DK"/>
+                <constraint firstAttribute="trailing" secondItem="0QH-rH-ZpL" secondAttribute="trailing" id="nze-I3-JGI"/>
+                <constraint firstItem="rwO-5N-FuW" firstAttribute="trailing" secondItem="4o7-Qp-gpQ" secondAttribute="trailing" id="q1W-cD-e7B"/>
+                <constraint firstItem="4o7-Qp-gpQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xIg-YV-XVO"/>
+            </constraints>
+            <size key="customSize" width="171" height="106"/>
+            <connections>
+                <outlet property="iconImageView" destination="4o7-Qp-gpQ" id="3dM-FR-8DS"/>
+                <outlet property="nickNameBtn" destination="rwO-5N-FuW" id="Au2-iG-0TB"/>
+                <outlet property="onLineBtn" destination="0QH-rH-ZpL" id="Zx2-gs-5gs"/>
+                <outlet property="roomNameLabel" destination="8Qf-ko-UUN" id="7Ri-cS-e5t"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="-67"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="Img_user" width="16" height="16"/>
+        <image name="viewerIcon" width="10" height="8"/>
+    </resources>
+</document>
